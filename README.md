@@ -180,7 +180,8 @@ plt.title("Training Loss")
 plt.show()
 
 ```
-<img width="840" height="31" alt="image" src="https://github.com/user-attachments/assets/9049ef68-969c-47c0-ae89-6060210f9eff" />
+
+<img width="616" height="462" alt="image" src="https://github.com/user-attachments/assets/bb96de34-f890-4b97-8f81-8a6a106196e0" />
 
 ```
 with torch.no_grad():
@@ -189,7 +190,7 @@ with torch.no_grad():
 print(f'CE Loss: {loss:.8f}')
 
 ```
-<img width="616" height="462" alt="image" src="https://github.com/user-attachments/assets/bb96de34-f890-4b97-8f81-8a6a106196e0" />
+<img width="840" height="31" alt="image" src="https://github.com/user-attachments/assets/9049ef68-969c-47c0-ae89-6060210f9eff" />
 
 ```
 correct = 0
