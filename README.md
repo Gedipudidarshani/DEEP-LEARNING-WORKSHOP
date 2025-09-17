@@ -1,6 +1,7 @@
 # DEEP-LEARNING-WORKSHOP
-## TITLE:Binary Classification with Neural Networks on the Census Income Dataset
-
+## Binary Classification with Neural Networks on the Census Income Dataset
+### NAME:GEDIPUDI DARSHANI 
+### REGISTER NUMBER:212223230062
 ## PROGRAM:
 ```
 import torch
@@ -67,6 +68,7 @@ conts[:5]
 conts = torch.tensor(conts, dtype=torch.float32)
 ```
 
+<img width="834" height="87" alt="image" src="https://github.com/user-attachments/assets/aa274cde-c7ff-477f-a27d-faff1d621bb8" />
 
 ```
 y = torch.tensor(df[y_col].values, dtype=torch.int64).flatten()
@@ -136,6 +138,7 @@ class TabularModel(nn.Module):
 model = TabularModel(emb_szs, n_cont=len(cont_cols), out_sz=2, layers=[50], p=0.4)
 model 
 ```
+<img width="843" height="317" alt="image" src="https://github.com/user-attachments/assets/42e2af61-a1f3-4a4c-8a4f-4e3ef3445fbf" />
 
 ```
 criterion = nn.CrossEntropyLoss()
@@ -167,6 +170,8 @@ print(f'epoch: {i:3}  loss: {loss.item():10.8f}') # print the last line
 print(f'\nDuration: {time.time() - start_time:.0f} seconds') # print the time elapsed
 
 ```
+<img width="845" height="257" alt="image" src="https://github.com/user-attachments/assets/db6e3596-c048-441b-be99-6d71961c831d" />
+
 ```
 plt.plot([loss.item() for loss in losses])
 plt.xlabel("Epoch")
@@ -175,6 +180,7 @@ plt.title("Training Loss")
 plt.show()
 
 ```
+<img width="840" height="31" alt="image" src="https://github.com/user-attachments/assets/9049ef68-969c-47c0-ae89-6060210f9eff" />
 
 ```
 with torch.no_grad():
@@ -183,6 +189,8 @@ with torch.no_grad():
 print(f'CE Loss: {loss:.8f}')
 
 ```
+<img width="616" height="462" alt="image" src="https://github.com/user-attachments/assets/bb96de34-f890-4b97-8f81-8a6a106196e0" />
+
 ```
 correct = 0
 for i in range(len(y_test)):
@@ -193,3 +201,4 @@ accuracy = correct / len(y_test) * 100
 print(f'{correct} out of {len(y_test)} = {accuracy:.2f}% correct')
 
 ```
+<img width="843" height="27" alt="image" src="https://github.com/user-attachments/assets/4a91d43d-e936-44cd-b756-a4a12c3c7fc8" />
